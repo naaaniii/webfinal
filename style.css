@@ -1,0 +1,244 @@
+    * {
+        margin: 0;
+        color: rgb(60, 60, 60);
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    body {
+        position: relative;
+        max-width: 1100px;
+        margin: auto;
+        background-color: rgb(251, 241, 242);
+        font-family: monospace;
+    }
+    
+    header,
+    footer {
+        background-color: rgb(255, 223, 228);
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .main-header {
+        height: 50px;
+        line-height: 2;
+        font-family: "Source Code Pro", monospace;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        font-family: "Source Code Pro", monospace;
+    }
+    
+    nav .navigation-list {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    nav .navigation-list .navigation-list-item {
+        border: 1px solid rgb(214, 214, 214);
+        padding: 4px 7px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    nav .navigation-list .navigation-list-item:hover {
+        background-color: rgba(255, 223, 228, 0.3);
+    }
+    
+    .text {
+        width: 500px;
+        margin: 15px auto;
+        font-size: 1.2rem;
+    }
+    
+    .aside {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 500px;
+        font-size: 1.2rem;
+    }
+    
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .container {
+        display: flex;
+        padding-bottom: 100px;
+        min-height: 100vh;
+    }
+    
+    .container .home-main {
+        flex: 1;
+        padding: 20px;
+        border-right: 1px solid rgb(214, 214, 214);
+    }
+    
+    .container .home-main p {
+        margin-top: 20px;
+    }
+    
+    .container .form {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .container .form h2 {
+        margin-bottom: 20px;
+    }
+    
+    .container .form input,
+    .container .form textarea {
+        display: block;
+    }
+    
+    .container .form textarea {
+        resize: none;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    
+    main {
+        margin-top: 22px;
+        padding-bottom: 100px;
+    }
+    
+    h1 {
+        position: relative;
+        padding: 30px 0;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+    }
+    /* PAGES */
+    /* Interests */
+    
+    .interests-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1.5fr;
+        column-gap: 10px;
+        padding-bottom: 100px;
+    }
+    
+    .interests-container article {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        row-gap: 15px;
+    }
+    
+    .interests-container article .article-img {
+        border: 1px solid;
+        border-color: rgb(214, 214, 214);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+    }
+    
+    thead {
+        font-weight: bold;
+        background-color: rgb(255, 223, 228);
+    }
+    
+    td {
+        padding: 3px;
+        border: 1px solid #777;
+    }
+    
+    .table_list>li {
+        list-style: circle;
+    }
+    /* form */
+    
+    input {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid black;
+        padding: 0.4em;
+        border-radius: 0.5em;
+    }
+    
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
+    /* Expertise */
+    
+    main #showcase {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
+    
+    main #showcase .showcase-container {
+        padding: 10px;
+    }
+    
+    main #showcase .showcase-container .showcase-header {
+        height: 20px;
+        padding: 6px;
+        border-radius: 5px;
+    }
+    
+    main #showcase .showcase-container img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .container {
+            display: block;
+        }
+        .container .home-main {
+            border-right: none;
+            border-bottom: 1px solid rgb(214, 214, 214);
+        }
+        .interests-container {
+            display: block;
+        }
+        .interests-container article {
+            flex-direction: row;
+            column-gap: 15px;
+        }
+    }
+    
+    main #showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    
+    @media screen and (max-width: 767px) {
+        main #showcase {
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        }
+    }

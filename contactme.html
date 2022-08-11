@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>My First Web - Introducing Myself</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <p>My First Web - Introducing Myself</p>
+    </header>
+    <nav>
+        <ul class="navigation-list">
+            <li class="navigation-list-item"><a href="./index.html">Home</a></li>
+            <li class="navigation-list-item">
+                <a href="./interests.html">Interests</a>
+            </li>
+            <li class="navigation-list-item">
+                <a href="./expertise.html">Expertise</a>
+            </li>
+            <li class="navigation-list-item">
+                <a href="./contactme.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <h1>
+            Contact Me
+        </h1>
+        <div class="container">
+            <main class="home-main">
+                <figure>
+                    <!-- youtube share -> source code -->
+                    <iframe src="https://www.youtube.com/embed/pPAAFMtDUzo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <figcaption>This is My favorite song!</figcaption>
+                </figure>
+                <p>
+                    Feel free to leave your information.
+                </p>
+                <p>
+                    I will contact you as soon as possible.
+                </p>
+            </main>
+
+            <div class="form">
+                <h2>Contact</h2>
+                <form method="post" action="https://httpbin.org/post">
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" required type="text" />
+                    <label for="email">Email</label>
+                    <input id="email" required type="email" />
+                    <label for="phone">Phone</label>
+                    <input id="phone" placeholder="000-000-0000" />
+                    <input type="button" id="checkPhone" value="validate format" />
+                    <label for="company">Company</label>
+                    <input id="company" />
+                    <label for="occupation">Occupation</label>
+                    <input id="occupation" />
+                    <label for="address">Address</label>
+                    <input id="address" />
+                    <label for="message">Message</label>
+                    <textarea id="message" maxlength="200" required></textarea>
+                    <input id="submit" type="submit" value="submit" disabled="true" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <span style="font-weight: bold">Contact</span> nyoo@myseneca.ca <br> WEB222 Final Assessment
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
